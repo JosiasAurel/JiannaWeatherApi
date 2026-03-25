@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Weather Forcast</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Open-source weather forcast">
+    <meta name="keywords" content="weather, OpenWeather, forcast">
+    <style type="text/css">
+        #main-header{
+            text-align:center;
+            background-color: goldenrod;
+            color: whitesmoke;
+            padding:10px;
+        }
+        #main-footer{
+            text-align: center;
+            font-size:18px;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="main-header">
+        <h1>Five Day Weather Forcast</h1>
+        <h2>{{ cityName }}</h2>
+    </header>
+    <p>Weather, temperature, and humidity sourced from <a href="https://fastapi.tiangolo.com/advanced/templates/" target = "_blank"> OpenWeatherData</a> </p>
+
+    <h3>Day 1:</h3>
+    <h4>Description</h4>
+    <p> {{ w1 }} </p>
+
+    <h4>Temp</h4>
+    {% for t in temp1 %}
+    <p> {{ t }} </p>
+    {% endfor %}
+
+    <h4>Humidity</h4>
+    {% for h in hum1 %}
+    <p> {{ h }} </p>
+    {% endfor %}
+ 
+    <br>
+    <hr>
+    <br>
+
+    <h3>Day 2:</h3>
+    <h4>Description</h4>
+    <p> {{ w2 }} </p>
+
+    <h4>Temp</h4>
+    {% for t in temp2 %}
+    <p> {{ t }} </p>
+    {% endfor %}
+
+    <h4>Humidity</h4>
+    {% for h in hum2 %}
+    <p> {{ h }} </p>
+    {% endfor %}
+
+
+    <br>
+    <hr>
+    <br>
+
+    <h3>Day 3:</h3>
+    <h4>Description</h4>
+    <p> {{ w3 }} </p>
+
+    <h4>Temp</h4>
+    {% for t in temp3 %}
+    <p> {{ t }} </p>
+    {% endfor %}
+
+    <h4>Humidity</h4>
+    {% for h in hum3 %}
+    <p> {{ h }} </p>
+    {% endfor %}
+
+    <br>
+    <hr>
+    <br>
+
+    <h3>Day 4:</h3>
+    <h4>Description</h4>
+    <p> {{ w4 }} </p>
+
+    <h4>Temp</h4>
+    {% for t in temp4 %}
+    <p> {{ t }} </p>
+    {% endfor %}
+
+    <h4>Humidity</h4>
+    {% for h in hum4 %}
+    <p> {{ h }} </p>
+    {% endfor %}
+
+    <br>
+    <hr>
+    <br>
+
+    <h3>Day 5:</h3>
+    <h4>Description</h4>
+    <p> {{ w5 }} </p>
+
+    <h4>Temp</h4>
+    {% for t in temp5 %}
+    <p> {{ t }} </p>
+    {% endfor %}
+
+    <h4>Humidity</h4>
+    {% for h in hum5 %}
+    <p> {{ h }} </p>
+    {% endfor %}
+
+    <a href="C:\Users\jiann\Desktop\weatherImage.jpg">
+        <img src="C:\Users\jiann\Desktop\weatherImage.jpg" alt="My Sample Image" width="600">
+    </a>
+
+</body>
+</html>
